@@ -5,6 +5,12 @@ import 'package:flutter_deryarpl3/row_column.dart/column_widget.dart';
 import 'package:flutter_deryarpl3/row_column.dart/latihan_row_column.dart';
 import 'package:flutter_deryarpl3/row_column.dart/layout_widget.dart';
 import 'package:flutter_deryarpl3/row_column.dart/row_widget.dart';
+import 'package:flutter_deryarpl3/sized_box_stack/LatihanLayout.dart';
+import 'package:flutter_deryarpl3/sized_box_stack/LayoutDua.dart';
+import 'package:flutter_deryarpl3/sized_box_stack/LayoutEmpat.dart';
+import 'package:flutter_deryarpl3/sized_box_stack/LayoutSatu.dart';
+import 'package:flutter_deryarpl3/sized_box_stack/LayoutTiga.dart';
+import 'package:flutter_deryarpl3/sized_box_stack/StackWidget.dart';
 
 void main() {
   runApp(MyApp());
@@ -26,7 +32,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: const Color.fromARGB(255, 0, 0, 0),
           
         ),
-        body: LatihanRowColumn(
+        body: Latihanlayout(
           
         ),
       ),

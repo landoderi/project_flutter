@@ -1,38 +1,60 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
-class LatihanRowColumn extends StatelessWidget {
-  const LatihanRowColumn({super.key});
+class LatihanLayoutDua extends StatelessWidget {
+  const LatihanLayoutDua({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
       height: double.infinity,
-      padding: EdgeInsets.only(right: 10, left: 10),
-      color: Colors.purple,
+      padding: EdgeInsets.only(right: 16, left: 16),
+      color: const Color.fromARGB(255, 254, 254, 254),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Container(
             width: double.infinity,
-            padding: EdgeInsets.only(left: 15),
+            padding: EdgeInsets.only(left: 16),
             child: Text(
-              "Ini Text",
-              style: TextStyle(color: Colors.white),
+              "INI JUDUL",
+              style: TextStyle(color: const Color.fromARGB(255, 0, 0, 0)),
               textAlign: TextAlign.left,
             ),
           ),
+          Container(height: 40, width: 520, color: const Color.fromARGB(255, 0, 0, 0)),
           Container(
-            height: 40,
-            width: 520,
-            color: Colors.amber,
-          )
+            width: double.infinity,
+            padding: EdgeInsets.only(left: 16),
+            child: Text(
+              "INI JUDUL",
+              style: TextStyle(color: Colors.black),
+              textAlign: TextAlign.left,
+            ),
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Container(height: 160, width: 220, color: Colors.amber),
+              Container(height: 160, width: 220, color: Colors.amber),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Container(height: 160, width: 220, color: Colors.amber),
+              Container(height: 160, width: 220, color: Colors.amber),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Container(height: 160, width: 220, color: Colors.amber),
+              Container(height: 160, width: 220, color: Colors.amber),
+            ],
+          ),
         ],
       ),
-      );
-      
-    
+    );
   }
 }
