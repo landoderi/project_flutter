@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      
       home: Scaffold(
         appBar: AppBar(
           title: const Text("Berita Hari Ini",
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: const Color.fromARGB(255, 0, 0, 0),
           
         ),
-        body: Latihanlayout(
+        body: LatihanLayout(
           
         ),
       ),
