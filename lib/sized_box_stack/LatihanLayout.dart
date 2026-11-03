@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 class LatihanLayout extends StatelessWidget {
+  const LatihanLayout({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(

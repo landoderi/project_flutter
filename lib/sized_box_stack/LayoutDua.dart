@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Layoutdua extends StatelessWidget {
+  const Layoutdua({super.key});
+
 
   @override
   Widget build(BuildContext context) {

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class  KartuDashboard extends StatelessWidget {
+  const KartuDashboard({super.key});
+
 
   @override
   Widget build(BuildContext context) {

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Expandedwidget extends StatelessWidget {
+  const Expandedwidget({super.key});
+
 
   @override
   Widget build(BuildContext context) {
