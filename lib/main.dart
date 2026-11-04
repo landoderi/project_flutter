@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_deryarpl3/gridview/grid_basic.dart';
+import 'package:flutter_deryarpl3/gridview/grid_builder_widget.dart';
+import 'package:flutter_deryarpl3/gridview/latihan_grid.dart';
 import 'package:flutter_deryarpl3/listview_widget/latihan_list.dart';
 import 'package:flutter_deryarpl3/listview_widget/list_basic.dart';
 import 'package:flutter_deryarpl3/listview_widget/list_builder.dart';
@@ -20,14 +23,14 @@ class MyApp extends StatelessWidget {
       
       home: Scaffold(
         appBar: AppBar(
-          title: const Text("Flutter.apk",
+          title: const Text("FloraFauna",
           style: TextStyle(
           color: Colors.white
           ),),
-          backgroundColor: const Color.fromARGB(255, 0, 0, 0),
+          backgroundColor: const Color.fromARGB(255, 0, 119, 16),
           
         ),
-        body: LatihanList(
+        body: LatihanGrid(
           
         ),
       ),

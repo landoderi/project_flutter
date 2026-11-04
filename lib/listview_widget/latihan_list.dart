@@ -24,17 +24,29 @@ class LatihanList extends StatelessWidget {
                   color: Colors.amber,
                   borderRadius: BorderRadius.circular(20),
                   image: const DecorationImage(
-                    image: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCMDxH3pny2srCgZhZ7Z62VkPiMwvldl2jOf2LQSYrJg&s=10"),
+                    image: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-GUPPvS8CYmRypcfgrzLtcuLboDOcusyehtI_VfzqSg&s=10"),
                     fit: BoxFit.fill,
                   ),
                 ),
-                child: const Text(
-                  "Bromo",
-                  style: TextStyle(color: Colors.white, fontSize: 25),
-                ),
+                child: Row(
+                  children: [
+                    Container(
+                      child: Text("data", style: TextStyle(color: Colors.white),),
+                    ),
+                    Container(
+                      height: 10,
+                      width: 100,
+                      decoration: BoxDecoration(
+                        color: Colors.blue
+                      ),
+                      child: Center(child: Text("Sewa"),),
+                    )
+                  ],
+                )
               ),
               Container(
-                height: 200,
+                height: 250,
+                width: 400,
                 margin: const EdgeInsets.all(10),
                 padding: const EdgeInsets.all(10),
                 alignment: Alignment.bottomLeft,
@@ -45,6 +57,43 @@ class LatihanList extends StatelessWidget {
                     image: NetworkImage("https://images.pistonheads.com/nimg/43151/z.jpg"),
                     fit: BoxFit.fill,
                   ),
+                ),
+                child: const Text("McLaren", style: TextStyle(color: Colors.white, fontSize: 25),),
+              ),
+               Container(
+                height: 200,
+                margin: const EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
+                alignment: Alignment.bottomLeft,
+                decoration: BoxDecoration(
+                  color: Colors.amber,
+                  borderRadius: BorderRadius.circular(20),
+                  image: const DecorationImage(
+                    image: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx_k7Mo1tDjLSI6sO_DaZJTfiULt1ggk7jzP-3wIKJ0Q&s=10"),
+                    fit: BoxFit.fill,
+                  ),
+                ),
+                child: const Text(
+                  "Ferarri",
+                  style: TextStyle(color: Colors.white, fontSize: 25),
+                ),
+              ),
+               Container(
+                height: 200,
+                margin: const EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
+                alignment: Alignment.bottomLeft,
+                decoration: BoxDecoration(
+                  color: Colors.amber,
+                  borderRadius: BorderRadius.circular(20),
+                  image: const DecorationImage(
+                    image: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-zKHSTfVBtxzvr897llsviCGOILmWs2_1miMbWvTjTA&s=10"),
+                    fit: BoxFit.fill,
+                  ),
+                ),
+                child: const Text(
+                  "BMW M43",
+                  style: TextStyle(color: Colors.white, fontSize: 25),
                 ),
               ),
             ],
