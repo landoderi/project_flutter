@@ -6,6 +6,13 @@ class LatihanList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text(
+              "Jual kendaraan",
+              style: TextStyle(color: Colors.white),
+            ),
+         backgroundColor: const Color.fromARGB(255, 73, 196, 253),
+      ),
       body: ListView(
         children: [
           // ================= BAGIAN ATAS (VERTIKAL) =================
@@ -16,7 +23,8 @@ class LatihanList extends StatelessWidget {
           Column(
             children: [
               Container(
-                height: 200,
+                height: 300,
+                width: 3000,
                 margin: const EdgeInsets.all(10),
                 padding: const EdgeInsets.all(10),
                 alignment: Alignment.bottomLeft,
@@ -24,29 +32,18 @@ class LatihanList extends StatelessWidget {
                   color: Colors.amber,
                   borderRadius: BorderRadius.circular(20),
                   image: const DecorationImage(
-                    image: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-GUPPvS8CYmRypcfgrzLtcuLboDOcusyehtI_VfzqSg&s=10"),
+                    image: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTpvo0sAGCMnJL6XjoOaigjfqxBA-7O93Dy6s2fhHrVg&s=10"),
                     fit: BoxFit.fill,
                   ),
                 ),
-                child: Row(
-                  children: [
-                    Container(
-                      child: Text("data", style: TextStyle(color: Colors.white),),
-                    ),
-                    Container(
-                      height: 10,
-                      width: 100,
-                      decoration: BoxDecoration(
-                        color: Colors.blue
-                      ),
-                      child: Center(child: Text("Sewa"),),
-                    )
-                  ],
-                )
+                child: const Text(
+                  "Ferarri",
+                  style: TextStyle(color: Colors.white, fontSize: 25),
+                ),
               ),
               Container(
-                height: 250,
-                width: 400,
+                height: 350,
+                width: 3000,
                 margin: const EdgeInsets.all(10),
                 padding: const EdgeInsets.all(10),
                 alignment: Alignment.bottomLeft,
@@ -61,7 +58,8 @@ class LatihanList extends StatelessWidget {
                 child: const Text("McLaren", style: TextStyle(color: Colors.white, fontSize: 25),),
               ),
                Container(
-                height: 200,
+                height: 300,
+                width: 3000,
                 margin: const EdgeInsets.all(10),
                 padding: const EdgeInsets.all(10),
                 alignment: Alignment.bottomLeft,
@@ -74,12 +72,13 @@ class LatihanList extends StatelessWidget {
                   ),
                 ),
                 child: const Text(
-                  "Ferarri",
+                  "Pagani",
                   style: TextStyle(color: Colors.white, fontSize: 25),
                 ),
               ),
                Container(
-                height: 200,
+                height: 300,
+                width: 3000,
                 margin: const EdgeInsets.all(10),
                 padding: const EdgeInsets.all(10),
                 alignment: Alignment.bottomLeft,
@@ -113,7 +112,7 @@ class LatihanList extends StatelessWidget {
               children: [
                 Container(
                   height: 200,
-                  width: 250, // Lebar wajib diatur untuk item horizontal
+                  width: 300, // Lebar wajib diatur untuk item horizontal
                   margin: const EdgeInsets.symmetric(horizontal: 10),
                   padding: const EdgeInsets.all(10),
                   alignment: Alignment.bottomLeft,
@@ -121,12 +120,12 @@ class LatihanList extends StatelessWidget {
                     color: Colors.amber,
                     borderRadius: BorderRadius.circular(20),
                     image: const DecorationImage(
-                      image: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrbvXtlhZGYvHuo8rM-jJPoqTy-UDjjNL406_UO3uczASaFra3s0y1qZ4&s=10"),
+                      image: NetworkImage("https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Bendi_bakudo_Padang.JPG/330px-Bendi_bakudo_Padang.JPG?utm_source=id.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"),
                       fit: BoxFit.fill,
                     ),
                   ),
                   child: const Text(
-                    "may hom",
+                    "Kuda",
                     style: TextStyle(color: Colors.white, fontSize: 25),
                   ),
                 ),
@@ -140,12 +139,12 @@ class LatihanList extends StatelessWidget {
                     color: Colors.amber,
                     borderRadius: BorderRadius.circular(20),
                     image: const DecorationImage(
-                      image: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwfZvrG9ihJrdmCOjrXH9Hh-loUneQmDBEFJefr-wsUA&s=10"),
+                      image: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm6V-peS8NqcOrlfBR-MV9QNcl9Uf_t4zRcfrx_B0mKlucLsO2hq9s7Ag&s=10"),
                       fit: BoxFit.fill,
                     ),
                   ),
                   child: const Text(
-                    "Ducati v4",
+                    "mobil jokowi",
                     style: TextStyle(color: Colors.white, fontSize: 25),
                   ),
                 ),
@@ -159,12 +158,12 @@ class LatihanList extends StatelessWidget {
                     color: Colors.amber,
                     borderRadius: BorderRadius.circular(20),
                     image: const DecorationImage(
-                      image: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrbvXtlhZGYvHuo8rM-jJPoqTy-UDjjNL406_UO3uczASaFra3s0y1qZ4&s=10"),
+                      image: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQNmUrsiKpRFzKG_LJXjGBZRfyTqswv8gACyRnEPlrA&s=10"),
                       fit: BoxFit.fill,
                     ),
                   ),
                   child: const Text(
-                    "may hom",
+                    "kopdes",
                     style: TextStyle(color: Colors.white, fontSize: 25),
                   ),
                 ),
@@ -178,12 +177,12 @@ class LatihanList extends StatelessWidget {
                     color: Colors.amber,
                     borderRadius: BorderRadius.circular(20),
                     image: const DecorationImage(
-                      image: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrbvXtlhZGYvHuo8rM-jJPoqTy-UDjjNL406_UO3uczASaFra3s0y1qZ4&s=10"),
+                      image: NetworkImage("https://pbs.twimg.com/media/HCofUWqawAIQhAB?format=webp&name=large"),
                       fit: BoxFit.fill,
                     ),
                   ),
                   child: const Text(
-                    "may hom",
+                    "motor gus akira nakai 99",
                     style: TextStyle(color: Colors.white, fontSize: 25),
                   ),
                 ),

@@ -6,6 +6,7 @@ class LatihanGrid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: ListView(
         children: [
            const Padding(
@@ -47,33 +48,6 @@ class LatihanGrid extends StatelessWidget {
       mainAxisSpacing: 8
       ),
       children: [
-       Container(
-         child:  Text("Flora", style: TextStyle(fontSize: 25))
-       ),
-        Container(
-          color: Colors.amber,
-          child: FlutterLogo(
-            size: 50,
-            style: FlutterLogoStyle.markOnly,
-            textColor: Colors.green,
-          ),
-        ),
-        Container(
-          color: const Color.fromARGB(255, 0, 0, 0),
-          child: FlutterLogo(size: 69, style: FlutterLogoStyle.horizontal),
-        ),
-        Container(
-          color: const Color.fromARGB(255, 11, 138, 0),
-          child: FlutterLogo(size: 64, style: FlutterLogoStyle.stacked),
-        ),
-        Container(
-          color: const Color.fromARGB(255, 177, 0, 0),
-          child: FlutterLogo(size: 64, style: FlutterLogoStyle.markOnly),
-        ),
-        Container(
-          color: const Color.fromARGB(255, 119, 0, 230),
-          child: FlutterLogo(size: 64, style: FlutterLogoStyle.horizontal),
-        ),
       ]
     )
           

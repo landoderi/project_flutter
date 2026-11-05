@@ -5,6 +5,7 @@ class LatihanContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Scaffold(appBar: AppBar(),);
     return Container(
       width: double.infinity,
       height: 400,
@@ -26,13 +27,8 @@ class LatihanContainer extends StatelessWidget {
         "Gelombang demonstrasi besar-besaran yang berujung kerusuhan dan penjarahan melanda Prancis sejak 17 Oktober 2026. Aksi ini dipicu oleh lonjakan biaya hidup, penurunan kualitas layanan publik, serta protes pelajar terhadap fasilitas sekolah yang buruk, dengan lebih dari 1.200 orang ditangkap oleh pihak berwenang.",
         // Perbaikan: textAlign harus berada di dalam properti, bukan sebagai posisi parameter pertama
         textAlign: TextAlign.justify,
-        style: TextStyle(
-          backgroundColor: Colors.white,
-
-        ),
-        
+        style: TextStyle(backgroundColor: Colors.white),
       ),
     );
   }
-  
 }
