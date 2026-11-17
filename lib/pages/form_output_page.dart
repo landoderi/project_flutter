@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class HasilPage extends StatelessWidget {
-  final String nama, email, ekskul, gender;
+  final String nama, email, ekskul, gender, tgllahir; // Tambahkan parameter tanggal lahir
 
   const HasilPage({
     super.key,
@@ -9,6 +9,7 @@ class HasilPage extends StatelessWidget {
     required this.email,
     required this.ekskul,
     required this.gender,
+    required this.tgllahir, // Tambahkan parameter tanggal lahir
   });
 
   @override
@@ -24,6 +25,7 @@ class HasilPage extends StatelessWidget {
             Text('Email: $email'),
             Text('Ekskul: $ekskul'),
             Text('Jenis kelamin: $gender'),
+            Text('Tanggal Lahir: $tgllahir'), // Tampilkan tanggal lahir
           ],
         ),
       ),

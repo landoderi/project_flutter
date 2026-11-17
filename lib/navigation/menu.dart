@@ -8,10 +8,10 @@ class ContohNav extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor:
-          Colors.grey[100], // Warna latar belakang yang lembut dan modern
+          const Color.fromARGB(255, 255, 255, 255), // Warna latar belakang yang lembut dan modern
       appBar: AppBar(
         title: const Text(
-          "Menu Navigasi Utama",
+          "Menu",
           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
         ),
         centerTitle: true,
@@ -56,7 +56,7 @@ class ContohNav extends StatelessWidget {
                     ),
                     SizedBox(height: 4),
                     Text(
-                      "Silakan pilih menu latihan di bawah ini.",
+                      "Silakan pilih menu di bawah ini.",
                       style: TextStyle(color: Colors.white70, fontSize: 14),
                     ),
                   ],
@@ -64,7 +64,7 @@ class ContohNav extends StatelessWidget {
               ),
               const SizedBox(height: 24),
               const Text(
-                "Daftar Menu & Latihan",
+                "Daftar Menu",
                 style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
@@ -150,7 +150,7 @@ class ContohNav extends StatelessWidget {
                 context,
                 title: "Halaman Formulir",
                 subtitle: "Navigasi ke halaman /formulir",
-                icon: Icons.crop_square,
+                icon: Icons.assignment_outlined,
                 onPressed: () {
                   Navigator.pushNamed(context, '/formulir');
                 },
@@ -158,11 +158,11 @@ class ContohNav extends StatelessWidget {
               const SizedBox(height: 12),
               _buildMenuButton(
                 context,
-                title: "Halaman Hasil Formulir",
-                subtitle: "Navigasi ke halaman /hasil",
-                icon: Icons.crop_square,
+                title: "Halaman Latihan Formulir",
+                subtitle: "Navigasi ke halaman /latihan_formulir",
+                icon: Icons.assignment_outlined,
                 onPressed: () {
-                  Navigator.pushNamed(context, '/hasil');
+                  Navigator.pushNamed(context, '/latihan_formulir');
                 },
               ),
             ],

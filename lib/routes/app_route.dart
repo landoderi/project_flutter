@@ -1,6 +1,7 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_deryarpl3/container_widget/latihan_container.dart';
 import 'package:flutter_deryarpl3/pages/form_output_page.dart';
+import 'package:flutter_deryarpl3/pages/latihan_formulir.dart';
 import 'package:flutter_deryarpl3/pages/formulir_input_page.dart';
 import 'package:flutter_deryarpl3/listview_widget/latihan_list.dart';
 import 'package:flutter_deryarpl3/gridview/latihan_grid.dart';
@@ -17,6 +18,7 @@ class AppRoute {
   static const container = '/container';
   static const formulir = '/formulir';
   static const hasil = '/hasil';
+  static const latihanFormulir = '/latihan_formulir';
 
 
   static Map<String, WidgetBuilder> routes = {
@@ -27,6 +29,7 @@ class AppRoute {
     rowcolumn:(context) => LatihanLayoutDua(),
     container:(context) => LatihanContainer(),
     formulir:(context) => FormEkskul(),
-    hasil:(context) => HasilPage(nama: '', email: '', ekskul: '', gender: ''),
+    hasil:(context) => HasilPage(nama: '', email: '', ekskul: '', gender: '', tgllahir: ''), // Tambahkan parameter tanggal lahir
+    latihanFormulir:(context) => const LatihanFormulir(),
   };
 }
