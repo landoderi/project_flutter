@@ -8,6 +8,8 @@ import 'package:flutter_deryarpl3/gridview/latihan_grid.dart';
 import 'package:flutter_deryarpl3/navigation/menu.dart';
 import 'package:flutter_deryarpl3/row_column.dart/latihan_row_column.dart';
 import 'package:flutter_deryarpl3/sized_box_stack/LatihanLayout.dart';
+import 'package:flutter_deryarpl3/pages/album_page.dart';
+import 'package:flutter_deryarpl3/pages/post_page.dart';
 
 class AppRoute {
   static const menu = '/';
@@ -19,6 +21,8 @@ class AppRoute {
   static const formulir = '/formulir';
   static const hasil = '/hasil';
   static const latihanFormulir = '/latihan_formulir';
+  static const album = '/album';
+  static const posts = '/posts';
 
 
   static Map<String, WidgetBuilder> routes = {
@@ -31,5 +35,7 @@ class AppRoute {
     formulir:(context) => FormEkskul(),
     hasil:(context) => HasilPage(nama: '', email: '', ekskul: '', gender: '', tgllahir: ''), // Tambahkan parameter tanggal lahir
     latihanFormulir:(context) => const LatihanFormulir(),
+    album:(context) => const AlbumPage(),
+    posts:(context) => const PostPage(),
   };
 }

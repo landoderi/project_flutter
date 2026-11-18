@@ -165,6 +165,26 @@ class ContohNav extends StatelessWidget {
                   Navigator.pushNamed(context, '/latihan_formulir');
                 },
               ),
+                const SizedBox(height: 12),
+                _buildMenuButton(
+                    context,
+                    title: "Halaman Album",
+                    subtitle: "Navigasi ke halaman /album",
+                    icon: Icons.assignment_outlined,
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/album');
+                  },
+                ),
+  const SizedBox(height: 12),
+                _buildMenuButton(
+                    context,
+                    title: "Halaman Posts",
+                    subtitle: "Navigasi ke halaman /posts",
+                    icon: Icons.assignment_outlined,
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/posts');
+                  },
+                ),
             ],
           ),
         ),
